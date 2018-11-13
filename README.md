@@ -1,4 +1,4 @@
-# Dashboards usando Python
+# Dashboards en HTML usando Python
 
 Este repositorio contiene ejemplos de construcción de dashboards usando Python y HTML. Es publicado en https://jdvelasq.github.io/CDA-09-2-dashboards/
 
