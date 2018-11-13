@@ -11,3 +11,5 @@ El código de cada tablero es generado directamente con Python.
 * [Dashboard 3](/dashboard3.html)
 
 * [Dashboard 4](/dashboard4.html)
+
+Ejemplos de tableros usando Tableu pueden ser encontrados en http://medata.gov.co/medell%C3%ADn-en-cifras
