@@ -1,67 +1,69 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- Esta parte es generica -->
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc; 
-}
-
-.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-}
-</style>
+  <title>Mi primer dashboard (TITULO) </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+  
+<div class="container">
+  <div class="jumbotron">
+    <h1>Mi primer dashboard usando Boostrap (CONTENEDOR)</h1>      
+    <p>Texto secundario.</p>
+  </div>
+  
+  <p>Este es un parrafo.</p>
+  
+  <div class="container">
+    <h2>Grafico 1</h2>
+    <p>Haga click aquí para abrirlo y cerrarlo</p>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse1">Panel del gráfico 1</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Grafica de Sin(x).</p>
+            <img src="sin.png" alt="Sin(x)">
+          </div>
+          <div class="panel-footer">Panel Footer</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<center>
-  <h1>Titulo del Dashboard</h1>
-</center>
+  <div class="container">
+    <h2>Grafico 2</h2>
+    <p>Haga click aquí para abrirlo y cerrarlo</p>
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse2">Panel del gráfico 2</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Grafica de Cos(x).</p>
+            <img src="cos.png" alt="Cos(x)">
+          </div>
+          <div class="panel-footer">Panel Footer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     
-<button class="accordion">Grafica 1</button>
-<div class="panel">
-  <p>Grafica de Sin(x).</p>
-  <img src="sin.png" alt="Sin(x)">
 </div>
-
-<button class="accordion">Grafica 2</button>
-<div class="panel">
-  <p>Grafica de Cos(x).</p>
-  <img src="cos.png" alt="Sin(x)">
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
-</script>
 
 </body>
 </html>

@@ -1,82 +1,42 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<p>Haga clic en una de las pestanas:</p>
 
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'Grafica1')">Grafica 1</button>
-  <button class="tablinks" onclick="openTab(event, 'Grafica2')">Grafica 2</button>
+<div class="container">
+  <h2>Mi primer dashboard</h2>
+  <p>Este es un ejemplo de un panel="pill"</p>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>TEXTO INICIAL</h3>
+      <p>Este es el texto del primer menu</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <p>Grafica de Sin(x).</p>
+      <img src="sin.png" alt="Sin(x)">
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <p>Grafica de cosn(x).</p>
+      <img src="cos.png" alt="cos(x)">
+    </div>
+  </div>
 </div>
 
-<div id="Grafica1" class="tabcontent">
-  <p>Grafica de Sin(x).</p>
-  <img src="sin.png" alt="Sin(x)">
-</div>
 
-<div id="Grafica2" class="tabcontent">
-  <p>Grafica de Cos(x).</p>
-  <img src="cos.png" alt="Cos(x)">
-</div>
-
-<script>
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-     
 </body>
-</html> 
+</html>

@@ -6,4 +6,8 @@ El código de cada tablero es generado directamente con Python.
 
 * [Dashboard 1](/dashboard1.html)
 
+* [Dashboard 2](/dashboard2.html)
 
+* [Dashboard 3](/dashboard3.html)
+
+* [Dashboard 4](/dashboard4.html)
