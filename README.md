@@ -4,4 +4,6 @@ Este repositorio contiene ejemplos de construcción de dashboards usando Python 
 
 El código de cada tablero es generado directamente con Python.
 
+* [Dashboard 1](/dashboard1.html)
+
 
